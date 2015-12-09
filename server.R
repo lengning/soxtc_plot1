@@ -1,8 +1,6 @@
 server <- function(input, output) {
-library(EBSeq)
-	pool.in <- read.csv("~/Desktop/TC_12day_pooled_meanspcorr_QC_EC.csv",row.names=1)
-data.raw <- data.matrix(pool.in)
-data.norm <- GetNormalizedMat(data.raw, MedianNorm(data.raw))
+pool.in <- read.csv("~/Desktop/TC_12day_pooled_meanspcorr_QC_normEC.csv",row.names=1)
+data.norm <- data.matrix(pool.in)
 cnames <- colnames(data.norm)
 h.ind <- as.numeric(substr(cnames,2,4))
 day.ind <- ceiling(h.ind/24)
