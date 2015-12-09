@@ -1,6 +1,6 @@
 # soxtc_plot1
 
-Download TC_12day_pooled_meanspcorr_QC_EC.csv to Desktop
+Download TC_12day_pooled_meanspcorr_QC_normEC.csv to Desktop
 
 in R run
 
