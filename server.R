@@ -18,8 +18,8 @@ feeding.s <- rbind(c(0,0),c(21,24),c(37,40),c(69,72),c(96,96),c(141,144),c(189,1
 	plot(1, type="n", axes=F, xlab="", ylab="")
 	legend("top", paste("day", names(day.col)),col=day.col,ncol=3, lwd=2,cex=2)
 	plot(data.norm[input$name,]-1,pch=20,col=day.col.pool, main=input$name,ylab="normalized expression")
-	for(i in 1:nrow(feeding.s))axis(3,feeding.s[i,],rep("",2),lwd=8,col="blue",col.ticks="white", lwd.ticks=1)
+	for(i in 1:nrow(feeding.s))axis(3,feeding.s[i,],rep("",2),lwd=8,col="blue",col.ticks="white", lwd.ticks=.1)
 	plot(data.norm[input$name,],pch=20,col=day.col.pool, main=input$name,ylab="normalized expression + 1 (log scale)",log="y")
-	for(i in 1:nrow(feeding.s))axis(3,feeding.s[i,],rep("",2),lwd=8,col="blue", col.ticks="white", lwd.ticks=1)
+	for(i in 1:nrow(feeding.s))axis(3,feeding.s[i,],rep("",2),lwd=8,col="blue", col.ticks="white", lwd.ticks=.1)
 	})
 }
