@@ -13,6 +13,7 @@ names(day.col) <- sort(unique(day.ind))
 
 day.col.pool <- day.col[as.character(day.ind[cnames])]
 feeding.s <- rbind(c(0,0),c(21,24),c(37,40),c(69,72),c(96,96),c(141,144),c(189,192),c(237,240))
+output$minn <- min(data.norm[input$name,])
 	output$plot <- renderPlot({
 	par(mfrow=c(1,3),cex.lab=2, cex.axis=2, cex.main=2, mar=c(5,7,5,7))	
 	plot(1, type="n", axes=F, xlab="", ylab="")
